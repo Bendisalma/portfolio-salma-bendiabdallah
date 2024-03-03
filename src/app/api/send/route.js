@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend('re_WUntUR31_3LodQB6gMGQyH1PMS18j5uNu');
 
 
 
