@@ -15,6 +15,7 @@ const EmailSection = () => {
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
+
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
@@ -39,6 +40,10 @@ const EmailSection = () => {
     }
   };
 
+  const handleNewMessage = () => {
+    setEmailSubmitted(false);
+  };
+
   return (
     <section
       id="contact"
@@ -46,29 +51,39 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
-          Let&apos;s Connect
-        </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <h5 className="text-xl font-bold text-white my-2">Connectons-nous</h5>
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-justify">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          Je suis actuellement à la recherche de nouvelles opportunités, ma
+          boîte de réception est toujours ouverte. Que vous ayez une question ou
+          simplement envie de dire bonjour, je ferai de mon mieux pour vous
+          répondre !
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/Bendisalma" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link
+            href="http://www.linkedin.com/in/salma-bendiabdallah-a0447b52"
+            target="_blank"
+          >
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
-          </p>
+          <div className="z-10">
+            <p className="text-green-500 text-sm mt-2 mb-4 mx-4">
+              Message envoyé avec succès !
+            </p>
+            <button
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              onClick={handleNewMessage}
+            >
+              Envoyer un nouveau message
+            </button>
+          </div>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
@@ -76,7 +91,7 @@ const EmailSection = () => {
                 htmlFor="email"
                 className="text-white block mb-2 text-sm font-medium"
               >
-                Your email
+                Votre adresse courriel
               </label>
               <input
                 name="email"
@@ -92,7 +107,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Subject
+                Sujet
               </label>
               <input
                 name="subject"
@@ -100,7 +115,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="Juste pour dire bonjour"
               />
             </div>
             <div className="mb-6">
@@ -114,14 +129,14 @@ const EmailSection = () => {
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
+                placeholder="Parlons de..."
               />
             </div>
             <button
               type="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
-              Send Message
+              Envoyer
             </button>
           </form>
         )}
