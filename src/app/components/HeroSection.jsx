@@ -42,7 +42,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base md:text-lg mb-6 md:mr-20 text-justify">
-           Passionnée par le développement et avide de découvertes, je suis toujours prête à coder et à explorer les innombrables possibilités offertes par le monde du développement. Mon engagement et ma curiosité sont mes moteurs dans cette quête professionnelle, où chaque ligne de code est une opportunité de grandir et d'innover.
+           Passionnée par le développement et avide de découvertes, je suis toujours prête à coder et à explorer les innombrables possibilités offertes par le monde de l'informatique. Mon engagement et ma curiosité sont mes moteurs dans cette quête professionnelle, où chaque projet est une opportunité de grandir et d'innover.
           </p>
           <div className="mb-40">
             <Link
