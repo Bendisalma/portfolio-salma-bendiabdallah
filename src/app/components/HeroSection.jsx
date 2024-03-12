@@ -20,10 +20,12 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="md:col-span-8 col-span-12 place-self-center text-center md:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4  text-5xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-5xl leading-relaxed  font-extrabold ">
             <span className="lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Bonjour, je m'appelle Bendiabdallah Salma, je suis{" "}
+              Bonjour, je suis{" "}
             </span>
+            
+            
             <br></br>
             <TypeAnimation
               sequence={[
@@ -40,9 +42,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base md:text-lg mb-6 md:mr-20 text-justify">
-            Exploratrice du code, tout juste diplômée et avide de découvertes.
-            Créative dans l'art du développement et prête à explorer, à coder et
-            à découvrir l'infini monde des possibles.
+           Passionnée par le développement et avide de découvertes, je suis toujours prête à coder et à explorer les innombrables possibilités offertes par le monde du développement. Mon engagement et ma curiosité sont mes moteurs dans cette quête professionnelle, où chaque ligne de code est une opportunité de grandir et d'innover.
           </p>
           <div className="mb-40">
             <Link
@@ -70,7 +70,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center md:mt-8 lg:mt-0 order-first md:order-last"
         >
-          <div className="rounded-full bg-gradient-to-r from-primary-400 to-secondary-600 sm:w-[500px] sm:h-[500px] relative overflow-hidden mb-8 md:mb-0">
+          <div className="rounded-full bg-gradient-to-r from-primary-400 to-secondary-600 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] relative overflow-hidden mb-8 md:mb-0">
             <Image
               src="/images/hero-image.png"
               alt="hero image"

@@ -30,7 +30,7 @@ const Navbar = () => {
           href={"/"}
           className="text-xl text-white font-semibold"
         >
-         Accueil
+         Bendiabdallah Salma
         </Link>
         <div className="mobile-menu block md:hidden ">
           {!navbarOpen ? (
