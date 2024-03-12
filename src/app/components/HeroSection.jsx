@@ -33,7 +33,7 @@ const HeroSection = () => {
                 1000,
                 "problème solver",
                 1000,
-                "passionnée par l'UX",
+                "passionnée d'UX",
                 1000,
               ]}
               wrapper="span"
