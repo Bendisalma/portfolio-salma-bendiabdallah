@@ -25,7 +25,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>AEC en Développement de sites web transactionnels (formtion intensive : 975 heures) - Collège Ahuntsic</li>
+        <li>AEC en Développement de sites web (formtion intensive : 975 heures) - Collège Ahuntsic</li>
         <li>Maîtrise en Ingénierie de la création multimédia et direction artistique - Université Nice Sophia Antipolis</li>
       </ul>
     ),
