@@ -31,7 +31,7 @@ const projectsData = [
         
       ],
       presentation: "Ce projet de fin d'études consiste en une plateforme e-commerce dédiée à la vente d'œuvres d'art, avec une architecture Full Stack comprenant deux parties distinctes : l'interface d'administration (Admin) et la plateforme de magasin (Magasin). Ce projet offre une expérience complète d'e-commerce d'œuvres d'art, de la gestion administrative à la navigation et l'achat pour les clients.",
-      technologiesUsed: ["React", "Next.js", "Next.Auth", "Tailwind", "CSS", "MongoDB", "Amazon S3", "Google Cloud Console", "DialogFlow", "Stripe", "Vercel."],
+      technologiesUsed: ["React", "Next.js", "Next.Auth", "Tailwind CSS", "MongoDB", "Amazon S3", "Google Cloud Console", "DialogFlow", "Stripe", "Vercel", "Styled-components", "Mongoose", "Axios"],
     },
   },
   {
